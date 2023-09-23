@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Release Notes
+
+- NextJS w/ app router application
+- Edge function to serve the database to frontend
+- Simple Desktop/Mobile layout and design
+- Simple components to render Header, Footer and Reservations List
+- Listing all reservations
+- Filtering the list with one only field [status, data, area, shift]
+- Sorting by customer first name [ASC/DESC] and guest number [ASC/DESC]
+
+## Preview link
+
+[Deployed to vercel](https://restaurant-reservations-auaagnr0y-hanivic505.vercel.app)

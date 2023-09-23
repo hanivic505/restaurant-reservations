@@ -1,5 +1,5 @@
 import { Reservation } from "@/@types/reservations";
-import List from "./_components/LIst";
+import List from "./_components/List";
 
 async function getReservations(
   filter?: string
