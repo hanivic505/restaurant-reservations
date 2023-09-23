@@ -1,7 +1,7 @@
 import { Reservation } from "@/@types/reservations";
 import List from "./_components/LIst";
 
-export async function getReservations(
+async function getReservations(
   filter?: string
 ): Promise<{ reservations: Reservation[] }> {
   let { reservations }: { reservations: Reservation[] } = await fetch(

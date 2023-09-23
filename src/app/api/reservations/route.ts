@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { reservations } from "../data.json";
+import { reservations } from "../data";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
