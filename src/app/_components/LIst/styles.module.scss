@@ -1,0 +1,35 @@
+.list {
+  & > li {
+    cursor: pointer;
+    opacity: 0.85;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .confirmed {
+    background: #f004;
+  }
+  .not-confirmed {
+    background: #ff04;
+  }
+  .seated {
+    background: #04f4;
+  }
+  .checked-out {
+    background: #fff4;
+  }
+}
+.actionBar {
+  ul {
+    select,
+    input {
+      color: #000;
+    }
+    li {
+      display: grid;
+      @screen md {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
