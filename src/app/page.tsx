@@ -5,9 +5,7 @@ import { reservations as data } from "./api/data";
 async function getReservations(
   filter?: string
 ): Promise<{ reservations: Reservation[] }> {
-  let reservations: Reservation[] = filter
-    ? data.filter((reservation) => reservation.id.toString() === filter)
-    : data;
+  let reservations = data;
 
   if (filter) {
     const [key, value] = filter.split(":");
