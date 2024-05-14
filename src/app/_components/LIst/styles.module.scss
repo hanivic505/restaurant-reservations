@@ -19,17 +19,3 @@
     background: #fff4;
   }
 }
-.actionBar {
-  ul {
-    select,
-    input {
-      color: #000;
-    }
-    li {
-      display: grid;
-      @screen md {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  }
-}

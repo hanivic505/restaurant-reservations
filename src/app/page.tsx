@@ -1,12 +1,13 @@
 import { Reservation } from "@/@types/reservations";
 import List from "./_components/List";
+import { reservations as data } from "./api/data";
 
 async function getReservations(
   filter?: string
 ): Promise<{ reservations: Reservation[] }> {
-  let { reservations }: { reservations: Reservation[] } = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/reservations`
-  ).then((res) => res.json());
+  let reservations: Reservation[] = filter
+    ? data.filter((reservation) => reservation.id.toString() === filter)
+    : data;
 
   if (filter) {
     const [key, value] = filter.split(":");

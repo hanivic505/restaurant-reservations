@@ -1,0 +1,17 @@
+.actionBar {
+  ul {
+    select,
+    input {
+      color: #000;
+    }
+    li {
+      display: grid;
+      @screen md {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  button {
+    @apply px-4 py-2 bg-green-500 text-white rounded-md;
+  }
+}
